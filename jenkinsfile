@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/sirblong/100days-code-Python.git'
+            }
+        }
+    }
+}
